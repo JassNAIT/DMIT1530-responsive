@@ -1,0 +1,42 @@
+main{
+  padding: 5%;
+  background-color: tan;
+}
+.container{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+@media( min-width:768px) {
+main{
+  background-color: red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+p{
+  flex-basis: 49%;
+}
+article{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+h3{
+  flex-basis:100%;
+}
+}
+
+@media(min-width:1100px){
+body{
+  background-color: pink;
+}
+main{
+  padding: 0;
+  background-color: grey;
+}
+article p{
+  flex-basis: calc((100% - 6%));
+}
+
+
+}
